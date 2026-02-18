@@ -13,4 +13,9 @@ https://www.falstad.com/circuit/circuitjs.html?ctz=CQAgjCAMB0l3BWc0BMYAcKAsBOAzD
 
 Section 3.4.2 - The Gated D Latch
 
+* **WE = 0 (Memória):** O "portão" está fechado, forçando as entradas do RS Latch para o estado de repouso (1, 1) e mantendo o valor armazenado, independentemente do que aconteça em **D**.
+* **WE = 1 (Escrita):** O "portão" está aberto, permitindo que o valor de **D** (e seu inverso) chegue ao RS Latch, tornando a saída  uma cópia direta da entrada.
+
+Basicamente: **WE=0** congela a memória; **WE=1** deixa o dado passar.
+
 https://www.falstad.com/circuit/circuitjs.html?ctz=CQAgjCAMB0l3BWc0FwCwCY0HYEA4cEMElURTJyBTAWjDACgwEJiA2cNygZjb08qUMUckxYh2EvP178M0kcNIMA7iFkD1fcAE5hkVVv5g9EhB0kG1G+TO2XDN82Y4n9hyW5fhsHK98lA7HcAWSNNNDRjLkUUBjCbBUi5BSE4gA8QNG5jHKznMDQINAkSgEUGTOy5Ng40Zww2HRALcsMwGMKSz0iodpjuSG7nQZL-PEoOyijNcaEklP5-GdssuSw+tQnweRAabmEwXf99w93T9QxBMQhtrs17oXJRZlueIc1RxWeEBgBJTiXSjbA6CKAoUQAGT2Bx2-DoRzhIkoADMAIYAGwAzlRngZoR0JBshMSROjsbikAZMoSMIiihJmFlAQB1ACihguoMB3P8tI2K2JhhmUzWRLGlQkkGaYG42EZMrQ00BAGVJVd5QduIyZI1mYSAEoMIA
