@@ -1,5 +1,9 @@
 ﻿## Chapter 3
 
+Section 3.3.1 - Decoder
+
+https://www.falstad.com/circuit/circuitjs.html?ctz=CQAgjCAMB0l3BWc0FwCwCY0HYEA4cEMElURTJyBTAWjDACgwy0wA2cDPcsDT7yn0oImLduACcfBL0lCQ8kc0qsOxDjL7qoCnUrEcAzBmGzjlQeXIMA7iFXgzRR0NshDz+nw98w2DpBuPuD+9uJ+AW4OWJTBMVBBzvHBhpBoCXYpaWFG2YF2DmBo6YYE4MUZ7mVFJWUY2K6ZdQ05Ci35rSbc5gqQAkEmvd2DhoaRmSNjraPj5ele7p6yHXFolDUKawkAknMue-EWKNYAMnsLbPOy8gBmAIYANgDOVFYrzb4V9Y3ukxwbMwSZw23xAlzaWh092eryQgV2IJaAKmR1IDAAsjxfFxyGx1jjBCgMVi5Lj1lIdBgiZjNAoEBo8XSAgpqSSevTYoNCSIgA
+
 Section 3.4.1 - The R.S Latch
 
 | S | R | STATES |
