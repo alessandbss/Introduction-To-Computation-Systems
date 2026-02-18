@@ -19,3 +19,21 @@ Section 3.4.2 - The Gated D Latch
 Basicamente: **WE=0** congela a memória; **WE=1** deixa o dado passar.
 
 https://www.falstad.com/circuit/circuitjs.html?ctz=CQAgjCAMB0l3BWc0FwCwCY0HYEA4cEMElURTJyBTAWjDACgwEJiA2cNygZjb08qUMUckxYh2EvP178M0kcNIMA7iFkD1fcAE5hkVVv5g9EhB0kG1G+TO2XDN82Y4n9hyW5fhsHK98lA7HcAWSNNNDRjLkUUBjCbBUi5BSE4gA8QNG5jHKznMDQINAkSgEUGTOy5Ng40Zww2HRALcsMwGMKSz0iodpjuSG7nQZL-PEoOyijNcaEklP5-GdssuSw+tQnweRAabmEwXf99w93T9QxBMQhtrs17oXJRZlueIc1RxWeEBgBJTiXSjbA6CKAoUQAGT2Bx2-DoRzhIkoADMAIYAGwAzlRngZoR0JBshMSROjsbikAZMoSMIiihJmFlAQB1ACihguoMB3P8tI2K2JhhmUzWRLGlQkkGaYG42EZMrQ00BAGVJVd5QduIyZI1mYSAEoMIA
+
+Section 3.5 - The Concept of Memory
+
+Exemplo:
+• Endereço: 2 bits -> 4 Linhas (Gaveta 00, 01, 10, 11).
+• Endereçabilidade: 8 bits (1 Byte, padrão atual).
+• Capacidade Total: 4×8=32 bits.
+
+A endereçabilidade é decidida pelo arquiteto do computador independentemente do número de gavetas. Eu posso ter um hotel com apenas 4 quartos (endereço de 2 bits), mas cada quarto pode ser uma suíte presidencial gigante que guarda 64 bits de uma vez
+
+| No Hotel de Gavetas | No Computador (Seção 3.5) | Explicação Técnica |
+| --- | --- | --- |
+| **O número pintado na porta** | **Endereço (Address)** | O identificador único de uma localização de memória. |
+| **O número total de gavetas na parede** | **Espaço de Endereçamento (3.5.1)** | Se você usa 2 bits para o endereço, você tem 4 gavetas. Se usa 20 bits, tem 1 milhão. |
+| **A largura da gaveta (quantas folhas cabem)** | **Endereçabilidade (3.5.2)** | Quantos bits vivem em *cada* endereço. Geralmente é 8 bits (1 byte), mas pode ser maior. |
+| **O Gerente com as chaves** | **Decodificador (3.5.3)** | O circuito que recebe o endereço (ex: "11") e ativa apenas a linha correspondente. |
+| **A linha que destranca a gaveta** | **Word Line** | O fio que sai do decodificador e "acorda" os bits daquela linha específica. |
+| **O crachá "AUTORIZADO"** | **WE (Write Enable)** | O sinal elétrico que permite gravar novos dados. Se for 0, é só leitura. Se for 1, grava. |
